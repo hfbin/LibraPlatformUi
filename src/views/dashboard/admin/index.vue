@@ -37,14 +37,26 @@
           <el-collapse accordion>
             <el-collapse-item>
               <template slot="title">
-                V1.1 2021-09-01<i class="header-icon el-icon-info" />
+                V1.1 计划版本[待发布]<i class="header-icon el-icon-info" />
               </template>
-              <div>与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念；</div>
-              <div>在界面中一致：所有的元素和结构需保持一致，比如：设计样式、图标和文本、元素的位置等。</div>
+              <div>数据权限完善</div>
+              <div>接口参数校验完善</div>
+              <div>xxl-job定时任务接入</div>
             </el-collapse-item>
-            <el-collapse-item title="V1.0 2021-08-01">
-              <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-              <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+            <el-collapse-item title="V1.0 2021-10-01">
+              <div>多租户</div>
+              <div>多身份用户中心</div>
+              <div>RBAC权限设计</div>
+              <div>接口权限处理</div>
+              <div>统一异常拦截处理</div>
+              <div>统一日志拦截处理</div>
+              <div>Nacos配置中心相关配置抽取</div>
+              <div>Sentinel限流、熔断等相关处理</div>
+              <div>Redis相关操作工具封装</div>
+              <div>已接入的监控Nacos监控、服务器监控、服务监控</div>
+              <div>ELK日志收集搭建</div>
+              <div>Skywalking链路追踪接入</div>
+              <div>支撑网关、服务全链路蓝绿灰度发布</div>
             </el-collapse-item>
           </el-collapse>
         </el-card>
