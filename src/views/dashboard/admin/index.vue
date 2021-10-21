@@ -27,6 +27,24 @@
       </el-col>
     </el-row>
     <el-row style="margin-top: 18px">
+      <el-col style="width: 49%; margin-right: 1%">
+        <el-card class="box-card">
+          <div slot="header" class="clearfix">
+            <span>架构图</span>
+          </div>
+          <img style="width: 100%" src="@/assets/libra/libra-架构图.jpg">
+        </el-card>
+      </el-col>
+      <el-col style="width: 50%">
+        <el-card class="box-card">
+          <div slot="header" class="clearfix">
+            <span>功能规划图</span>
+          </div>
+          <img style="width: 82%" src="@/assets/libra/Libra-Platform平台规划.png">
+        </el-card>
+      </el-col>
+    </el-row>
+    <el-row style="margin-top: 18px">
       <el-col style="">
         <el-card class="box-card">
           <div slot="header" class="clearfix">
