@@ -1,30 +1,28 @@
 <template>
   <div class="app-container">
-    <el-card class="box-card">
-      <h2>Libra-Platform 微服务平台</h2>
-      <span style="font-size: 14px;">
-        🚜 Libra-Platform平台基于SpringCloud(2020.0.x) + SpringCloudAlibaba(2021.x) + SpringBoot(2.4.x) + Vue3开发，基于多租户SaaS模式的设计，拥有强大的用户中心，权限基于RBAC设计，支持租户灰度发布等功能。
-        Libra-Platform平台架构清晰、代码简洁、注解齐全，很适合作为基础框架使用。
-      </span>
-      <div style="margin-top: 10px" />
-      <el-button size="small" icon="el-icon-share" plain><a target="_blank" href="https://gitee.com/huangfubin/LibraPlatform">点我去 Gitee</a></el-button>
-      <el-button size="small" icon="el-icon-share" plain><a target="_blank" href="https://github.com/hfbin/LibraPlatform">点我去 Github</a></el-button>
-    </el-card>
-    <el-row style="margin-top: 18px">
+    <el-row>
       <el-col style="width: 49%; margin-right: 1%">
         <el-card class="box-card">
-          <div slot="header" class="clearfix">
-            <span>架构图</span>
-          </div>
-          <img style="width: 100%" src="@/assets/libra/libra-架构图.jpg">
+          <h2>Libra-Platform 微服务平台</h2>
+          <span style="font-size: 14px;">
+            🚜 Libra-Platform平台基于SpringCloud(2020.0.x) + SpringCloudAlibaba(2021.x) + SpringBoot(2.4.x) + Vue3开发，基于多租户SaaS模式的设计，拥有强大的用户中心，权限基于RBAC设计，支持租户灰度发布等功能。
+            Libra-Platform平台架构清晰、代码简洁、注解齐全，很适合作为基础框架使用。
+          </span>
+          <div style="margin-top: 10px" />
+          <el-button size="small" icon="el-icon-share" plain><a target="_blank" href="https://gitee.com/huangfubin/LibraPlatform">点我去 Gitee</a></el-button>
+          <el-button size="small" icon="el-icon-share" plain><a target="_blank" href="https://github.com/hfbin/LibraPlatform">点我去 Github</a></el-button>
         </el-card>
       </el-col>
       <el-col style="width: 50%">
         <el-card class="box-card">
-          <div slot="header" class="clearfix">
-            <span>功能规划图</span>
-          </div>
-          <img style="width: 82%" src="@/assets/libra/Libra-Platform平台规划.png">
+          <h2>Libra-Platform相关依赖工具入口</h2>
+          <el-button size="small" icon="el-icon-share" plain><a target="_blank" href="http://180.163.77.39:3000/">点我去 Grafana[libra/libra]</a></el-button>
+          <el-button size="small" icon="el-icon-share" plain><a target="_blank" href="http://180.163.77.39:9090/">点我去 Prometheus</a></el-button>
+          <el-button size="small" icon="el-icon-share" plain><a target="_blank" href="http://180.163.77.39:5601/">点我去 ELK</a></el-button>
+          <p style="margin-top: 30px"/>
+          <el-button size="small" icon="el-icon-share" plain><a target="_blank" href="http://180.163.77.39:8099/">点我去 Skywalking</a></el-button>
+          <el-button size="small" icon="el-icon-share" plain><a target="_blank" href="http://180.163.81.139:8088/">点我去 Sentinel</a></el-button>
+          <el-button size="small" icon="el-icon-share" plain><a target="_blank" href="http://180.163.81.139:8848/nacos/">点我去 Nacos</a></el-button>
         </el-card>
       </el-col>
     </el-row>
