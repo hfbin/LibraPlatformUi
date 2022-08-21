@@ -1,11 +1,11 @@
 <template>
   <li class="tree" :class="{'sub-tree-all': model.child != null && model.child.length === 0 }">
     <div v-if="model.child && model.child != null && model.child.length === 0" class="single-btn">
-      <el-checkbox v-model="model.checked" :disabled="model.checked && disabled" @change="toggleChange"/>
+      <el-checkbox v-model="model.checked" :disabled="model.checked && disabled" @change="toggleChange" />
       <span> {{ model.name }}</span>
     </div>
     <div v-else>
-      <el-checkbox v-model="model.checked" :disabled="model.checked && disabled" :indeterminate="model.indeterminate" @change="toggleChange">【全选】</el-checkbox>
+      <el-checkbox v-model="model.checked" :disabled="model.checked && disabled" :indeterminate="model.indeterminate" @change="toggleChange" />
       <span> {{ model.name }}</span>
     </div>
 
@@ -239,6 +239,7 @@ li{
       float: left;
       margin: 5px 10px 10px;
       width: 160px;
+      height: 16px;
     }
   }
 }

@@ -6,8 +6,8 @@
           <el-aside width="12%" style="border-right: 1px solid #eee">
             <div class="tree-search">
               <el-input v-model="filterName" size="small" icon="el-icon-search" placeholder="搜索角色">
-                <i v-if="filterName !== ''" slot="suffix" class="el-icon-circle-close" style="line-height: 32px" @click="resetSearchFilter" />
-                <i v-if="filterName === ''" slot="suffix" class="el-icon-search el-input__icon" />
+                <i v-if="filterName !== ''" slot="suffix" class="el-icon-circle-close" style="line-height: 32px" @click="resetSearchFilter"></i>
+                <i v-if="filterName === ''" slot="suffix" class="el-icon-search el-input__icon"></i>
               </el-input>
             </div>
             <el-tree
@@ -45,6 +45,10 @@
             </div>
           </el-aside>
           <el-main style="width: 100%;">
+            <div style="">
+              <h3 style="font-size: 20px;padding-left: 35px;font-weight: 500; margin-bottom: 0;">{{ currentRoleName }}</h3>
+              <h5 style="font-size: 12px;padding-left: 35px;fcolor: #999; overflow: hidden; margin-top: 5px; font-weight: 100; text-overflow: ellipsis; white-space: nowrap;">{{ currentRoleRemark }}</h5>
+            </div>
             <tree
               v-if="isRouterAlive"
               v-model="ids"
@@ -165,6 +169,10 @@ export default {
       disable: true,
       // 记录当前选中角色
       currentRoleId: undefined,
+      // 记录当前选中角色名称
+      currentRoleName: '角色菜单关联配置',
+      // 记录当前选中角色备注
+      currentRoleRemark: '系统默认会有一个超级管理员角色，拥有最高权限，无法编辑',
       // 保存角色权限对象
       roleMenuFrom: {
         roleId: undefined,
@@ -268,6 +276,8 @@ export default {
       if (!data.roleGroup) {
         console.log('handleNodeClick', data)
         this.currentRoleId = data.id
+        this.currentRoleName = data.name
+        this.currentRoleRemark = data.remark === null ? data.name : data.remark
         this.ids = []
         roleMenuAuth(data.id).then(response => {
           this.ids = response.data.menuIds
@@ -482,7 +492,7 @@ export default {
 
       .disabled {
         font-size: 14px;
-        color: #999;
+        color: #696969;
       }
 
       span {
