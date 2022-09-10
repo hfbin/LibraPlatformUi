@@ -16,14 +16,12 @@ export const columns = [
   {
     label: '租户名称',
     field: 'tenantName',
-    showTips: true,
-    width: 200
+    showTips: true
   },
   {
     label: '租户编码',
     field: 'tenantCode',
-    showTips: true,
-    width: 100
+    showTips: true
   },
   {
     label: '生效时间',
@@ -47,8 +45,7 @@ export const columns = [
   },
   {
     label: '菜单模板',
-    field: 'templateName',
-    width: 100
+    field: 'templateName'
   },
   {
     label: '是否启用',
